@@ -1,0 +1,7 @@
+.top-buffer {
+  margin-top: 20px;
+  padding-top: 15px;
+}
+.radio input[type='radio'] {
+  display: none;
+}

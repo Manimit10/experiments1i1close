@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/df1dfdeddd.js" crossorigin="anonymous"></script>
+    <!-- custome css -->
+    <link rel="stylesheet" href="preview.css" />
+    <!-- custome javascript -->
+    <script src="app.js" defer></script>
+    <script src="formControl.js" defer></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="Logo-ILDE.png" />
+
+    <title>Preview!</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light text-white"
+      style="background-image: linear-gradient(to right, #052e4a 0%, #9fdcff 100%)"
+    >
+      <a class="navbar-brand" href="#">
+        <img src="Logo-ILDE2.svg" height="30" class="d-inline-block align-top" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#">New design<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">My designs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Browse designs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Community</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white disabled" href="#">About</a>
+          </li>
+        </ul>
+        <div class="col-md-3">
+          <div class="input-group">
+            <input
+              class="form-control py-2 border-right-0 border"
+              type="search"
+              value="search designs"
+              id="example-search-input"
+            />
+            <span class="input-group-append">
+              <div class="input-group-text bg-transparent"><i class="fa fa-search"></i></div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-12">
+          <div class="alert alert-secondary" role="alert">Name of LD</div>
+        </div>
+      </div>
+      <div class="row mt-1 justify-content-between">
+        <div class="col-10">
+          <span class="mr-2"><a href="#">View revision history</a></span>
+          <span class="mr-2"><a href="#">Duplicate this design</a></span>
+          <span class="mr-2"><a href="#">View duplicates</a></span>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-light btn-sm">Save as PDF</button>
+        </div>
+      </div>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item pr-3">
+          <a
+            class="nav-link"
+            id="home-tab"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            >Info and Comments (0)</a
+          >
+        </li>
+        <li class="nav-item pr-3">
+          <a
+            class="nav-link active"
+            id="profile-tab"
+            data-toggle="tab"
+            href="#profile"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+            >Name of LD</a
+          >
+        </li>
+        <li class="nav-item pr-3">
+          <a
+            class="nav-link"
+            id="messages-tab"
+            data-toggle="tab"
+            href="#messages"
+            role="tab"
+            aria-controls="messages"
+            aria-selected="false"
+            >Activity</a
+          >
+        </li>
+        <li class="nav-item pr-3">
+          <a
+            class="nav-link"
+            id="settings-tab"
+            data-toggle="tab"
+            href="#settings"
+            role="tab"
+            aria-controls="settings"
+            aria-selected="false"
+            >support Document</a
+          >
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane" id="home" role="tabpanel" aria-labelledby="home-tab">external</div>
+        <!-- second tab -->
+        <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="alert alert-warning" role="alert">&copy; All rights reserved.</div>
+          <!-- <div class="alert alert-warning" role="alert">
+            Public link:
+            <input
+              class="form-control input-sm"
+              value="https://sos.gti.upf.edu/pyramidapp/activity/"
+              style="width: 200px"
+              readonly
+            />
+          </div> -->
+          <div class="alert alert-warning" role="alert">
+            <form class="form-inline">
+              <div class="form-group mb-2">
+                <label for="staticEmail2" class="sr-only">Public link:</label>
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Public link: " />
+              </div>
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword2"
+                  placeholder="https://sos.gti.upf.edu/pyramidapp/activity/"
+                />
+              </div>
+            </form>
+          </div>
+          <!-- inside the overflow -->
+          <div class="overflow-auto" style="overflow-y: scroll">
+            <div class="alert alert-dark text-center" role="alert"><b>Activity Summary</b></div>
+
+            This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions.
+            By design, this content will vertically scroll. This is an example of using <code>.overflow-auto</code> on
+            an element with set width and height dimensions. By design, this content will vertically scroll. This is an
+            example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design,
+            this content will vertically scroll. This is an example of using <code>.overflow-auto</code> on an element
+            with set width and height dimensions. By design, this content will vertically scroll.
+          </div>
+        </div>
+        <!-- third tab -->
+        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">activity contents</div>
+        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+          Support Document Content
+        </div>
+      </div>
+      <div class="row justify-content-between mt-2"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
