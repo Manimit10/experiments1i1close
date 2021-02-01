@@ -1,49 +1,46 @@
 const designData = [
   {
-    name: 'History of world war II',
-    description:
-      'Decide which is the best summary of the history of world war II among those provided in class and give your reasons.',
+    name: 'Digestive systems',
+    description: 'Distinguish between the monogastric and ruminant digestive systems.',
     Author: '',
     link: './previews/preview1.html',
     Time: '',
   },
   {
-    name: 'Historical eras',
-    description: 'Assess the quality of the five main historical eras presented in the history timeline.',
-    Author: 'Verónica',
+    name: 'Producing energy from atoms',
+    description: 'Discuss the differences between Fission and Fusion processes.',
+    Author: '',
     link: './Previews/preview2.html',
-    Time: '120 minutes',
+    Time: '',
   },
   {
-    name: 'Art painting styles',
-    description:
-      'Define, from the theoretical perspective, what are the main concepts of Expressionism and Surrealism.',
+    name: 'Neurogenesis and Gliogenesis',
+    description: 'Define, from the theoretical perspective, what is Neurogenesis and Gliogenesis.',
     Author: '',
     link: './Previews/preview3.html',
     Time: '',
   },
   {
-    name: "Shakespeare's Monologue",
+    name: 'Planetary attributes',
     description:
-      'Evaluate if the monologue watched in class could be considered a  Shakespearian monologue based on the authors’ style and historical characteristics.',
+      'Compare Mercury and Jupiter depending on their Mass, Orbital period, Rotation period and confirmed moons.',
     Author: '',
     link: './Previews/preview4.html',
-    Time: '120 minutes',
+    Time: '',
   },
   {
-    name: 'Network evaluation',
-    description: 'Judge WAN and LAN based on the security issues.',
-    Author: 'Karina Chappell Alaniz',
+    name: 'Sensors and actuators',
+    description: 'Explain the differences and commonalities of sensors and actuators.',
+    Author: '',
     link: './Previews/preview5.html',
-    Time: '120 minutes',
+    Time: '',
   },
   {
-    name: 'Types of instruments',
-    description:
-      'Find errors within classification of instruments provided in class according to the following types: percussion, stringed, keyboard, wind, and electronic.',
+    name: 'Periodic table: types of elements',
+    description: 'Classify the elements provided among the following 3 types: metals, non-metals, metalloids.',
     Author: '',
     link: './Previews/preview6.html',
-    Time: '120 minutes',
+    Time: '',
   },
 ];
 
